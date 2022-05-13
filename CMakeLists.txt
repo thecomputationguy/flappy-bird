@@ -11,7 +11,10 @@ StateMachine.cpp
 AssetManager.cpp
 InputManager.cpp
 SplashState.cpp
-MainMenuState.cpp)
+MainMenuState.cpp
+GameState.cpp
+GameOverState.cpp
+)
 
 target_include_directories(flappy-bird PUBLIC ${PROJECT_SOURCE_DIR})
 
