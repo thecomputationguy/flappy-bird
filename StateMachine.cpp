@@ -2,6 +2,7 @@
 
 namespace Game
 {
+    // Add a state to the stack.
     void StateMachine::AddState(StateRef newState, bool isReplacing)
     {
         this->_isAdding = true;
@@ -9,6 +10,7 @@ namespace Game
         this->_newState = std::move(newState);
     }
 
+    // Remove a state from the stack.
     void StateMachine::RemoveState()
     {
         this->_isRemoving = true;
@@ -49,6 +51,7 @@ namespace Game
         }
     }
 
+    // Returns the active state from the stack, which is the top element.
     StateRef &StateMachine::GetActiveState()
     {
         return this->_states.top();

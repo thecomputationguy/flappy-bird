@@ -10,6 +10,12 @@ namespace Game
 
     class StateMachine
     {
+        /**
+         * @brief This class stores the states of the game in a stack 
+         * and adds/removes/modifies states on the stack.
+         * 
+         */
+
         public:
             StateMachine(){}
             ~StateMachine(){}
@@ -17,6 +23,7 @@ namespace Game
             void AddState(StateRef newState, bool isReplacing = true);
             void RemoveState();
 
+            // This method is responsible for updating the game state.
             void ProcessStateChanges();
 
             StateRef &GetActiveState();
@@ -28,6 +35,5 @@ namespace Game
             bool _isRemoving;
             bool _isAdding;
             bool _isReplacing;
-
     };
  }
