@@ -1,8 +1,9 @@
 #include <iostream>
 #include "Game.hpp"
+#include "DEFINITIONS.hpp"
 
 int main()
 {
-    Game::Game(800, 600, "SFML Starter");
+    Game::Game(SCREEN_WIDTH, SCREEN_HEIGHT, "Flappy Bird");
     return EXIT_SUCCESS;
 }
