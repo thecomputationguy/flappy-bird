@@ -1,6 +1,6 @@
 #pragma once
 
-namespace GameState
+namespace Game
 {
     class State
     {

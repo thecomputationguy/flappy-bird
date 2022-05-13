@@ -1,6 +1,6 @@
 #include "StateMachine.hpp"
 
-namespace GameState
+namespace Game
 {
     void StateMachine::AddState(StateRef newState, bool isReplacing)
     {
@@ -14,6 +14,7 @@ namespace GameState
         this->_isRemoving = true;
     }
 
+    // add/change/delete states from/to the stack depending on the flags.
     void StateMachine::ProcessStateChanges()
     {
         if(this->_isRemoving && !this->_states.empty())

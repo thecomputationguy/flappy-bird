@@ -4,7 +4,7 @@
 #include <stack>
 #include "State.hpp"
 
-namespace GameState
+namespace Game
 {
     typedef std::unique_ptr<State> StateRef;
 
