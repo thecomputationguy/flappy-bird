@@ -11,29 +11,29 @@ namespace Game
     class StateMachine
     {
         /**
-         * @brief This class stores the states of the game in a stack 
+         * @brief This class stores the states of the game in a stack
          * and adds/removes/modifies states on the stack.
-         * 
+         *
          */
 
-        public:
-            StateMachine(){}
-            ~StateMachine(){}
+    public:
+        StateMachine() {}
+        ~StateMachine() {}
 
-            void AddState(StateRef newState, bool isReplacing = true);
-            void RemoveState();
+        void AddState(StateRef newState, bool isReplacing = true);
+        void RemoveState();
 
-            // This method is responsible for updating the game state.
-            void ProcessStateChanges();
+        // This method is responsible for updating the game state.
+        void ProcessStateChanges();
 
-            StateRef &GetActiveState();
+        StateRef &GetActiveState();
 
-        private:
-            std::stack<StateRef> _states;
-            StateRef _newState;
+    private:
+        std::stack<StateRef> _states;
+        StateRef _newState;
 
-            bool _isRemoving;
-            bool _isAdding;
-            bool _isReplacing;
+        bool _isRemoving;
+        bool _isAdding;
+        bool _isReplacing;
     };
- }
+}

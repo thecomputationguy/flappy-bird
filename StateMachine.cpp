@@ -19,11 +19,11 @@ namespace Game
     // add/change/delete states from/to the stack depending on the flags.
     void StateMachine::ProcessStateChanges()
     {
-        if(this->_isRemoving && !this->_states.empty())
+        if (this->_isRemoving && !this->_states.empty())
         {
             this->_states.pop();
 
-            if(!this->_states.empty())
+            if (!this->_states.empty())
             {
                 this->_states.top()->Resume();
             }
@@ -31,11 +31,11 @@ namespace Game
             this->_isRemoving = false;
         }
 
-        if(this->_isAdding)
+        if (this->_isAdding)
         {
-            if(!this->_states.empty())
+            if (!this->_states.empty())
             {
-                if(this->_isReplacing)
+                if (this->_isReplacing)
                 {
                     this->_states.pop();
                 }

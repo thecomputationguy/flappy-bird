@@ -7,7 +7,6 @@ namespace Game
 {
     SplashState::SplashState(GameDataRef data) : _data(data)
     {
-
     }
 
     void SplashState::Init()
@@ -21,9 +20,9 @@ namespace Game
     {
         sf::Event event;
 
-        while(_data->window.pollEvent(event))
+        while (_data->window.pollEvent(event))
         {
-            if(sf::Event::Closed == event.type)
+            if (sf::Event::Closed == event.type)
             {
                 _data->window.close();
             }
@@ -32,9 +31,9 @@ namespace Game
 
     void SplashState::Update(float dt)
     {
-        if(_clock.getElapsedTime().asSeconds() > SPLASH_STATE_SHOW_TIME)
+        if (_clock.getElapsedTime().asSeconds() > SPLASH_STATE_SHOW_TIME)
         {
-            std::cout<<"Go To Main Menu"<<std::endl;
+            std::cout << "Go To Main Menu" << std::endl;
         }
     }
 

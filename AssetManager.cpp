@@ -6,7 +6,7 @@ namespace Game
     {
         sf::Texture tex;
 
-        if(tex.loadFromFile(fileName))
+        if (tex.loadFromFile(fileName))
         {
             this->_textures[name] = tex;
         }
@@ -21,7 +21,7 @@ namespace Game
     {
         sf::Font font;
 
-        if(font.loadFromFile(fileName))
+        if (font.loadFromFile(fileName))
         {
             this->_fonts[name] = font;
         }
