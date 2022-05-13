@@ -1,10 +1,8 @@
-#include <SFML/Graphics.hpp>
 #include <iostream>
-
-#define SCREEN_WIDTH 768
-#define SCREEN_HEIGHT 768
+#include "Game.hpp"
 
 int main()
 {
+    Game::Game(800, 600, "SFML Starter");
     return EXIT_SUCCESS;
 }
