@@ -15,3 +15,7 @@ This repository is largely inspired by the tutorial at https://www.youtube.com/w
 2. To generate the executable, type: 'make'
 
 3. To run the program, type: './flappy-bird'
+
+## Screenshots
+
+[!image](Resources/res/screenshot.png)
