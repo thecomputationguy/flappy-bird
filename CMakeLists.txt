@@ -4,12 +4,14 @@ set(CMAKE_CXX_FLAGS "-Wall")
 
 project(flappy-bird)
 
-add_executable(flappy-bird main.cpp
-AssetManager.cpp
+add_executable(flappy-bird
+main.cpp
 Game.cpp
+StateMachine.cpp
+AssetManager.cpp
 InputManager.cpp
 SplashState.cpp
-StateMachine.cpp)
+MainMenuState.cpp)
 
 target_include_directories(flappy-bird PUBLIC ${PROJECT_SOURCE_DIR})
 
