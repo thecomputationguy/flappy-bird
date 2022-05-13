@@ -18,4 +18,4 @@ This repository is largely inspired by the tutorial at https://www.youtube.com/w
 
 ## Screenshots
 
-[!image](Resources/res/screenshot.png)
+![image](Resources/res/screenshot.png)
